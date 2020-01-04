@@ -1,1 +1,19 @@
 <!-- Optional additional links to insert for icons links -->
+{% if site.social-network-links.linkedin %}
+<a id="linkedin-link"
+   class="icon"
+   title="LinkedIn" aria-label="LinkedIn"
+   target="_blank"
+   href="{{ site.social-network-links.linkedin }}">
+  {% include svg/linkedin.svg %}
+</a>
+{% endif %}
+{% if site.social-network-links.github %}
+<a id="github-link"
+   class="icon"
+   title="Github" aria-label="Github"
+   target="_blank"
+   href="{{ site.social-network-links.github }}">
+  {% include svg/github.svg %}
+</a>
+{% endif %}
